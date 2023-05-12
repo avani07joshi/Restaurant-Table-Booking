@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Table Booking Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" />
+    <link rel="stylesheet" href="table_book.css" />
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      .title {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .user-details {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+      }
+
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .input-box span {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .input-box input {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f8f8f8;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .button {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .button input {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: #0085FF;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .button input:hover {
+        background-color: #0066CC;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Restaurant Table Booking Form</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span>First Name</span>
+              <input type="text" placeholder="Enter your first name" required />
+            </div>
+            <div class="input-box">
+              <span>Number Of Guests</span>
+              <input type="number" placeholder="Enter number of guests" required />
+            </div>
+            <div class="input-box">
+              <span>Email</span>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <span>Phone Number</span>
+              <input type="tel" placeholder="Enter your number" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Date</span>
+              <input type="date" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Time</span>
+              <input type="time" required />
+            </div>
+            <div class="input-box">
+              <span>Table Location</span>
+              <select name="table-location" required>
+                <option value="" selected disabled>Select table location</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  
+</html>
